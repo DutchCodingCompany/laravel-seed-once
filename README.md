@@ -48,7 +48,6 @@ Below is an example using a permission seeder and a user seeder which depends on
 # Seed permissions
 Seeding: Database\Seeders\PermissionSeeder
 Seeded:  Database\Seeders\PermissionSeeder (12.86ms)
-...
 
 # Seed users
 # Because we want to make sure the permissions have been seeded
