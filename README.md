@@ -21,7 +21,7 @@ Marking a seeder to run just once is as simple as using the
 ```php 
 <?php
 
-namespace DutchCodingCompany\SeedOnce;
+namespace Database\Seeders;
 
 use DutchCodingCompany\SeedOnce\Once;
 use Illuminate\Database\Seeder;
@@ -46,18 +46,18 @@ Below is an example using a permission seeder and a user seeder which depends on
 
 ```sh
 # Seed permissions
-Seeding: DutchCodingCompany\SeedOnce\PermissionSeeder
-Seeded:  DutchCodingCompany\SeedOnce\PermissionSeeder (12.86ms)
+Seeding: Database\Seeders\PermissionSeeder
+Seeded:  Database\Seeders\PermissionSeeder (12.86ms)
 ...
 
 # Seed users
 # Because we want to make sure the permissions have been seeded
 # call the permission seeder again in the user seeder.
-Seeding: DutchCodingCompany\SeedOnce\UserSeeder
-Seeding: DutchCodingCompany\SeedOnce\PermissionSeeder
-Skipped: DutchCodingCompany\SeedOnce\PermissionSeeder # Skipped
-Seeded:  DutchCodingCompany\SeedOnce\PermissionSeeder (0.01ms)
-Seeded:  DutchCodingCompany\SeedOnce\UserSeeder (12.76ms)
+Seeding: Database\Seeders\UserSeeder
+Seeding: Database\Seeders\PermissionSeeder
+Skipped: Database\Seeders\PermissionSeeder # Skipped
+Seeded:  Database\Seeders\PermissionSeeder (0.01ms)
+Seeded:  Database\Seeders\UserSeeder (12.76ms)
 ```
 
 In case you need to know whether a seeder has run already you may use the provided `seeded` method.
