@@ -1,0 +1,38 @@
+{
+    "name": "dutchcodingcompany/laravel-seed-once",
+    "description": "Simple package to allow running seeders just once.",
+    "keywords": [
+        "dutch coding company",
+        "dcc",
+        "seed",
+        "once",
+        "seed once",
+        "database",
+        "laravel",
+        "illuminate"
+    ],
+    "scripts": {
+        "test": "./vendor/bin/phpunit ./tests"
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/database": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.21",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DutchCodingCompany\\SeedOnce\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "homepage": "https://dutchcodingcompany.com",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
